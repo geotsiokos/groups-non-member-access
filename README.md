@@ -10,8 +10,7 @@ function example_groups_non_member_access_post_ids( $post_ids ) {
 </code>
 where all users that are not members of the group ids specified by the filter hook:
 
-<code>
-add_filter( 'groups_non_member_access_group_ids', 'example_groups_non_member_access_group_ids');
+<code>add_filter( 'groups_non_member_access_group_ids', 'example_groups_non_member_access_group_ids');
 function example_groups_non_member_access_group_ids( $group_ids ) {
 	return array( 2, 3 );
 }
