@@ -3,8 +3,7 @@ Give access to post(s), to non-members of specified group(s).
 
 For example, specify one or more post ids using the filter hook:
 
-<code>
-add_filter( 'groups_non_member_access_post_ids', 'example_groups_non_member_access_post_ids');
+<code>add_filter( 'groups_non_member_access_post_ids', 'example_groups_non_member_access_post_ids');
 function example_groups_non_member_access_post_ids( $post_ids ) {
 	return array( 1234, 2, 3345 );
 }
